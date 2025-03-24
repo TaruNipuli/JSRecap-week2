@@ -32,15 +32,14 @@ const todoList = [
 
 const ulElement = document.querySelector('ul');
 
-todoList.forEach((todo) => {
+for (const todo of todoList) {
   const isChecked = todo.completed ? 'checked' : '';
   const li = `<li>
                 <input type="checkbox" id="todo-${todo.id}" ${isChecked}>
                 <label for="todo-${todo.id}">${todo.task}</label>
               </li>`;
   ulElement.insertAdjacentHTML('beforeend', li);
-
-});
+}
 
 
 

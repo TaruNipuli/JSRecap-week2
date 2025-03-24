@@ -27,16 +27,23 @@ const todoList = [
   },
 ];
 
-/*Open t2 folder in your IDE/editor. The assignment remains unchanged from the first, 
-except that for this version, DOM methods are used to add the todo items.
-for attribute is added to <label> with htmlFor*/
+
 // add your code here
 const ulElement = document.querySelector('ul');
 
-const liElement = document.createElement('li');
-  const checkboxElement = document.createElement('input');
-  checkboxElement.setAttribute('type', 'checkbox');
-  checkboxElement.id = `todo-${todo.id}`;
-  checkboxElement.checked = todo.completed;
+for (const todo of todoList) {
+  const liElement = document.createElement('li');
 
-  const labelElement = document.createElement('label');
+  const checkbox = document.createElement('input');
+  checkbox.type = 'checkbox';
+  checkbox.id = `todo-${todo.id}`;
+  checkbox.checked = todo.completed;
+
+  const label = document.createElement('label');
+  label.htmlFor = `todo-${todo.id}`;
+  label.textContent = todo.task;
+
+  liElement.appendChild(checkbox);
+  liElement.appendChild(label);
+  ulElement.appendChild(liElement);
+}
