@@ -800,8 +800,23 @@ for(const restaurant of restaurants) {
     // tee sisältö modaliin
     const nameH3 = document.createElement('h3');
     nameH3.innerText = restaurant.name;
+    const addressP = document.createElement('p');
+    addressP.innerText = restaurant.address;
+    const postalCodeP = document.createElement('p');
+    postalCodeP.innerText = restaurant.postalCode;
+    const cityP = document.createElement('p');
+    cityP.innerText = restaurant.city;
+    const phoneP = document.createElement('p');
+    phoneP.innerText = restaurant.phone;
+    const companyP = document.createElement('p');
+    companyP.innerText = restaurant.company;
 
     modal.append(nameH3);
+    modal.append(addressP);
+    modal.append(postalCodeP);
+    modal.append(cityP);
+    modal.append(phoneP);
+    modal.append(companyP);
 
 
     edellinenHighlight = tr;

@@ -29,3 +29,14 @@ td {
   background-color: #747272;
   font-weight: bold;
 }
+
+#modal {
+  background-color: #c0b1b1;
+  border-radius: 1rem;
+  font-size: medium;
+  border: 0.2rem solid #747272;
+}
+
+#modal:focus {
+  outline: none;
+}
