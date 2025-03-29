@@ -23,7 +23,7 @@ label {
 }
 
 input {
-  position: absolute;
+  position: static;
   margin: 1rem;
 }
 
