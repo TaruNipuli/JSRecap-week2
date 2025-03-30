@@ -1,3 +1,3 @@
-# JavaScript Starter
+# JS Recap 1 & 2 + Advanced JS 1 & 2
 
-For Basics of Web Development course in Metropolia.
+[public_html linkki](https://users.metropolia.fi/~tarunip/JSRecap-week2/)
