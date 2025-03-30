@@ -75,8 +75,8 @@ const filterRestaurants = (filterValue) => {
 
   if (filterValue === 'sodexo') {
     filteredRestaurants = restaurants.filter(restaurant => restaurant.company.toLowerCase() === 'sodexo');
-  } else if (filterValue === 'compass') {
-    filteredRestaurants = restaurants.filter(restaurant => restaurant.company.toLowerCase() === 'compass');
+  } else if (filterValue === 'compass group') {
+    filteredRestaurants = restaurants.filter(restaurant => restaurant.company.toLowerCase() === 'compass group');
   } else {
     filteredRestaurants = restaurants;  // No filter, show all restaurants
   }
